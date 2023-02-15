@@ -8,13 +8,13 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
     font-family: var(--font);
     color: var(--cool-gray);
-    background-color: var(--light-blue);
+    background-color: var(--magnolia);
 }
 
 img,
