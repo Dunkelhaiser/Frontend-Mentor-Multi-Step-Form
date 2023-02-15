@@ -18,7 +18,6 @@ input {
 
     &.error {
         border-color: var(--strawberry-red);
-        border-width: 1.5px;
         outline-color: var(--strawberry-red);
     }
 }

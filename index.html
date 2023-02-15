@@ -7,6 +7,7 @@
         <meta name="description" content="Frontend Mentor Multi-Step Form Challange." />
         <title>Frontend Mentor | Multi-Step Form</title>
         <link rel="stylesheet" href="./src/css/styles.css" />
+        <script src="./src/ts/formValidation.ts" type="module" defer></script>
     </head>
     <body>
         <main class="section">
@@ -51,7 +52,7 @@
                                     <label>Name</label>
                                     <span class="error hidden">This field is required</span>
                                 </div>
-                                <input type="text" placeholder="e.g. Stephen King" />
+                                <input type="text" placeholder="e.g. Stephen King" id="name-input" />
                             </div>
 
                             <div class="input_section">
@@ -59,7 +60,7 @@
                                     <label>Email Address</label>
                                     <span class="error hidden">This field is required</span>
                                 </div>
-                                <input type="email" placeholder="e.g. stephenking@lorem.com" />
+                                <input type="email" placeholder="e.g. stephenking@lorem.com" id="email-input" />
                             </div>
 
                             <div class="input_section">
@@ -67,13 +68,13 @@
                                     <label>Phone Number</label>
                                     <span class="error hidden">This field is required</span>
                                 </div>
-                                <input type="tel" placeholder="e.g. +1 234 567 890" />
+                                <input type="tel" placeholder="e.g. +1 234 567 890" id="phone-input" />
                             </div>
                         </form>
                     </section>
                     <nav class="navigation">
                         <button type="button" class="text_btn hidden">Go Back</button>
-                        <button type="button">Next Step</button>
+                        <button type="button" id="next-btn">Next Step</button>
                     </nav>
                 </section>
             </div>
