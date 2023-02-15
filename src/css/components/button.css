@@ -9,12 +9,17 @@ button {
     background-color: var(--marine-blue);
     border: none;
     border-radius: 0.5em;
+    outline-color: var(--marine-blue);
 
     transition: var(--hover);
 
     &:hover,
     &:focus {
         background-color: var(--navy-blue);
+    }
+
+    &:active {
+        background-color: var(--navish-blue);
     }
 }
 

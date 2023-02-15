@@ -5,6 +5,10 @@
     justify-content: center;
 
     height: 100%;
+
+    @media (--phone) {
+        justify-content: flex-start;
+    }
 }
 
 .attribution {
@@ -12,4 +16,8 @@
     bottom: 1rem;
     margin: 0 2rem;
     text-align: center;
+
+    a {
+        color: var(--navy-blue);
+    }
 }
