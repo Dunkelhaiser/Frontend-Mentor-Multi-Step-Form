@@ -1,0 +1,18 @@
+{
+    "extends": ["stylelint-config-standard", "stylelint-config-clean-order", "stylelint-config-prettier"],
+    "plugins": ["stylelint-declaration-block-no-ignored-properties"],
+    "rules": {
+        "declaration-block-no-duplicate-properties": true,
+        "plugin/declaration-block-no-ignored-properties": true,
+        "color-hex-length": null,
+        "value-keyword-case": null,
+        "import-notation": "string",
+        "selector-class-pattern": null
+    },
+    "overrides": [
+        {
+            "files": ["**/*.scss"],
+            "customSyntax": "postcss-scss"
+        }
+    ]
+}
