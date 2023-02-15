@@ -139,6 +139,10 @@
         span.error {
             font-weight: 500;
             color: var(--strawberry-red);
+
+            @media (--phone) {
+                font-size: 0.875rem;
+            }
         }
     }
 }
