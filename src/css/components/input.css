@@ -1,0 +1,24 @@
+input {
+    padding: 0.75rem 1rem;
+
+    font-weight: 700;
+    color: var(--marine-blue);
+
+    border: 1px solid var(--light-gray);
+    border-radius: 0.5em;
+
+    &::placeholder {
+        font-weight: 500;
+        color: var(--cool-gray);
+    }
+
+    &:focus {
+        outline: 1px solid var(--purplish-blue);
+    }
+
+    &.error {
+        border-color: var(--strawberry-red);
+        border-width: 1.5px;
+        outline-color: var(--strawberry-red);
+    }
+}

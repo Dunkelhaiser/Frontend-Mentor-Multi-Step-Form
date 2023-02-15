@@ -1,0 +1,26 @@
+button {
+    cursor: pointer;
+
+    padding: 1rem 1.5rem;
+
+    font-weight: 700;
+    color: var(--white);
+
+    background-color: var(--marine-blue);
+    border: none;
+    border-radius: 0.5em;
+
+    transition: var(--hover);
+
+    &:hover,
+    &:focus {
+        background-color: var(--navy-blue);
+    }
+}
+
+.text_btn {
+    padding: 0;
+    color: var(--cool-gray);
+    background-color: transparent;
+    border: none;
+}

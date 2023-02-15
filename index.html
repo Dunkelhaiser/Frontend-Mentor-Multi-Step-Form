@@ -13,7 +13,7 @@
             <div class="container">
                 <section class="sidebar">
                     <div class="step">
-                        <span class="number">1</span>
+                        <span class="number active">1</span>
                         <div class="step_label">
                             <span>Step 1</span>
                             <h3>Your info</h3>
@@ -41,20 +41,40 @@
                         </div>
                     </div>
                 </section>
-                <section class="form_section">
-                    <h1>Personal info</h1>
-                    <p>Please provide your name, email address, and phone number.</p>
+                <section class="main_section">
+                    <section class="form_section">
+                        <h1>Personal info</h1>
+                        <p>Please provide your name, email address, and phone number.</p>
+                        <form>
+                            <div class="input_section">
+                                <div class="input_info">
+                                    <label>Name</label>
+                                    <span class="error hidden">This field is required</span>
+                                </div>
+                                <input type="text" placeholder="e.g. Stephen King" />
+                            </div>
 
-                    <label>Name</label>
-                    <input type="text" placeholder="e.g. Stephen King" />
+                            <div class="input_section">
+                                <div class="input_info">
+                                    <label>Email Address</label>
+                                    <span class="error hidden">This field is required</span>
+                                </div>
+                                <input type="email" placeholder="e.g. stephenking@lorem.com" />
+                            </div>
 
-                    <label>Email Address</label>
-                    <input type="email" placeholder="e.g. stephenking@lorem.com" />
-
-                    <label>Phone Number</label>
-                    <input type="tel" placeholder="e.g. +1 234 567 890" />
-
-                    <button type="button">Next Step</button>
+                            <div class="input_section">
+                                <div class="input_info">
+                                    <label>Phone Number</label>
+                                    <span class="error hidden">This field is required</span>
+                                </div>
+                                <input type="tel" placeholder="e.g. +1 234 567 890" />
+                            </div>
+                        </form>
+                    </section>
+                    <nav class="navigation">
+                        <button type="button" class="text_btn hidden">Go Back</button>
+                        <button type="button">Next Step</button>
+                    </nav>
                 </section>
             </div>
             <div class="attribution">
