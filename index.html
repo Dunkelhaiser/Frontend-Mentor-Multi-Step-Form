@@ -8,8 +8,9 @@
         <title>Frontend Mentor | Multi-Step Form</title>
         <link rel="stylesheet" href="./src/css/styles.css" />
         <!-- <script src="./src/ts/formValidation.ts" type="module" defer></script> -->
-        <script src="./src/ts/toggle.ts" type="module" defer></script>
-        <script src="./src/ts/step2.ts" type="module" defer></script>
+        <!-- <script src="./src/ts/toggle.ts" type="module" defer></script>
+        <script src="./src/ts/step2.ts" type="module" defer></script> -->
+        <script src="./src/ts/step3.ts" type="module" defer></script>
     </head>
     <body>
         <main class="section">
@@ -74,7 +75,7 @@
                             </div>
                         </form>
                     </section> -->
-                    <section class="form_section">
+                    <!-- <section class="form_section">
                         <h1>Select your plan</h1>
                         <p>You have the option of mounthly or yearly billing.</p>
                         <section class="plan_options">
@@ -117,6 +118,42 @@
                             </div>
                             <span id="yearly_cycle">Yearly</span>
                         </div>
+                    </section> -->
+                    <section class="form_section">
+                        <h1>Pick add-ons</h1>
+                        <p>Add-ons help enchance your gaming experience.</p>
+                        <section class="addons_options">
+                            <label for="online_service">
+                                <div class="option">
+                                    <input type="checkbox" id="online_service" />
+                                    <div class="details">
+                                        <h3>Online service</h3>
+                                        <span>Access to multiplayer games</span>
+                                    </div>
+                                    <span>+$1/mo</span>
+                                </div>
+                            </label>
+                            <label for="larger_storage">
+                                <div class="option">
+                                    <input type="checkbox" id="larger_storage" />
+                                    <div class="details">
+                                        <h3>Larger storage</h3>
+                                        <span>Extra 1TB of cloud save</span>
+                                    </div>
+                                    <span>+$2/mo</span>
+                                </div>
+                            </label>
+                            <label for="customizable_profile">
+                                <div class="option">
+                                    <input type="checkbox" id="customizable_profile" />
+                                    <div class="details">
+                                        <h3>Customizable Profile</h3>
+                                        <span>Custom theme on your profile</span>
+                                    </div>
+                                    <span>+$3/mo</span>
+                                </div>
+                            </label>
+                        </section>
                     </section>
                     <nav class="navigation">
                         <button type="button" class="text_btn hidden">Go Back</button>
