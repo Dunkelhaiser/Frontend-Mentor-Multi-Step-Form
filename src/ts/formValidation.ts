@@ -8,6 +8,10 @@ const emailInput = document.querySelector("#email-input") as HTMLInputElement;
 const phoneInput = document.querySelector("#phone-input") as HTMLInputElement;
 const nextButton = document.querySelector("#next-btn") as HTMLButtonElement;
 
+const summary = {
+    personalInfo: {} as { name: string; email: string; phone: string },
+};
+
 const showError = (input: HTMLInputElement, message: string) => {
     input.classList.add("error");
     input.classList.remove("success");
@@ -64,6 +68,9 @@ const validate = () => {
     checkEmail(emailInput);
     checkPhone(phoneInput);
     if (!form.querySelector("input.error")) {
+        summary.personalInfo.name = nameInput.value;
+        summary.personalInfo.email = emailInput.value;
+        summary.personalInfo.phone = phoneInput.value;
     }
 };
 
