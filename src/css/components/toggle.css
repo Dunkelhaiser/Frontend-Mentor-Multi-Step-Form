@@ -1,0 +1,40 @@
+.toggle {
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"] + label {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    input[type="checkbox"] + label::before {
+        content: "";
+
+        width: 2.5em;
+        height: 1.35em;
+
+        background-color: var(--marine-blue);
+        border-radius: 1em;
+    }
+
+    input[type="checkbox"] + label::after {
+        content: "";
+
+        position: absolute;
+        left: 0.3em;
+
+        width: 0.8em;
+        height: 0.8em;
+
+        background-color: var(--white);
+        border-radius: 50%;
+
+        transition: left 0.3s;
+    }
+
+    input[type="checkbox"]:checked + label::after {
+        left: 1.45em;
+    }
+}

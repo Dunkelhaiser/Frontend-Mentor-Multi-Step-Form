@@ -28,4 +28,15 @@ button {
     color: var(--cool-gray);
     background-color: transparent;
     border: none;
+
+    &:hover,
+    &:focus {
+        color: var(--navy-blue);
+        background-color: transparent;
+    }
+
+    &:active {
+        color: var(--navish-blue);
+        background-color: transparent;
+    }
 }
