@@ -1,20 +1,9 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-export {};
-
-const toggleBtn = document.querySelector(".toggle input") as HTMLInputElement;
-const monthly = document.querySelector("#monthly_cycle") as HTMLSpanElement;
-const yearly = document.querySelector("#yearly_cycle") as HTMLSpanElement;
-
-const toggle = () => {
+export const toggle = (toggleBtn: HTMLInputElement, optionOne: HTMLSpanElement, optionTwo: HTMLSpanElement) => {
     if (toggleBtn.checked) {
-        monthly.classList.remove("active");
-        yearly.classList.add("active");
+        optionOne.classList.remove("active");
+        optionTwo.classList.add("active");
     } else {
-        monthly.classList.add("active");
-        yearly.classList.remove("active");
+        optionOne.classList.add("active");
+        optionTwo.classList.remove("active");
     }
 };
-
-toggleBtn.addEventListener("click", toggle);
-toggle();

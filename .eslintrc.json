@@ -18,6 +18,8 @@
         "prefer-const": "warn",
         "no-empty": ["warn", { "allowEmptyCatch": true }],
         "no-nested-ternary": "off",
-        "no-plusplus": "off"
+        "no-plusplus": "off",
+        "no-param-reassign": [2, { "props": false }],
+        "import/prefer-default-export": "off"
     }
 }

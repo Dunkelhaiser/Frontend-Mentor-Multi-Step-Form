@@ -1,3 +1,3 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-export {};
+import { renderStepOne } from "./firstStep";
+
+renderStepOne();

@@ -161,6 +161,10 @@
     justify-content: space-between;
     padding: 4rem 5rem 1rem;
 
+    #next_btn {
+        margin-left: auto;
+    }
+
     @media (--phone) {
         position: absolute;
         right: 0;
@@ -443,7 +447,7 @@
     justify-items: center;
 
     width: 602.1px;
-    height: 538.2px;
+    height: 565.2px;
     padding: 2rem 5rem;
 
     text-align: center;
