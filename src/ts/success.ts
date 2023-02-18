@@ -1,3 +1,5 @@
+import successSvg from "../assets/images/icon-thank-you.svg";
+
 const sidebar = document.querySelectorAll(".number");
 
 export const renderSuccess = () => {
@@ -5,7 +7,7 @@ export const renderSuccess = () => {
     sidebar[3].classList.add("active");
     const mainSection = document.querySelector(".main_section") as HTMLFormElement;
     mainSection.innerHTML = `<section class="success_screen">
-                                <img src="./src/assets/images/icon-thank-you.svg" alt="Thank you" />
+                                <img src=${successSvg} alt="Thank you" />
                                 <h1>Thank you!</h1>
                                 <p>
                                     Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support,

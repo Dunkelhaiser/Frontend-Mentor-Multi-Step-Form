@@ -4,6 +4,9 @@ import { renderStepOne } from "./firstStep";
 // eslint-disable-next-line import/no-cycle
 import { renderStepThree } from "./thirdStep";
 import { toggle } from "./toggle";
+import arcadeSvg from "../assets/images/icon-arcade.svg";
+import advancedSvg from "../assets/images/icon-advanced.svg";
+import proSvg from "../assets/images/icon-pro.svg";
 
 const sidebar = document.querySelectorAll(".number");
 let toggleBtn: HTMLInputElement;
@@ -17,7 +20,7 @@ const monthlyOptions = (newPlan: string) => {
     return `<label for="arcade">
                             <div class="option">
                                 <input type="radio" name="plan" id="arcade" ${newPlan === "arcade" ? "checked" : ""}  />
-                                <img src="./src/assets/images/icon-arcade.svg" alt="Arcade" />
+                                <img src=${arcadeSvg} alt="Arcade" />
                                 <div class="details">
                                     <h3>Arcade</h3>
                                     <span>$9/mo</span>
@@ -27,7 +30,7 @@ const monthlyOptions = (newPlan: string) => {
                             <label for="advanced">
                             <div class="option">
                                 <input type="radio" name="plan" id="advanced" ${newPlan === "advanced" ? "checked" : ""} />
-                                <img src="./src/assets/images/icon-advanced.svg" alt="Advanced" />
+                                <img src=${advancedSvg} alt="Advanced" />
                                 <div class="details">
                                     <h3>Advanced</h3>
                                     <span>$12/mo</span>
@@ -37,7 +40,7 @@ const monthlyOptions = (newPlan: string) => {
                             <label for="pro">
                             <div class="option">
                                 <input type="radio" name="plan" id="pro" ${newPlan === "pro" ? "checked" : ""} />
-                                <img src="./src/assets/images/icon-pro.svg" alt="Pro" />
+                                <img src=${proSvg} alt="Pro" />
                                 <div class="details">
                                     <h3>Pro</h3>
                                     <span>$15/mo</span>
@@ -50,7 +53,7 @@ const yearlyOptions = (newPlan: string) => {
     return `<label for="arcade">
                             <div class="option">
                                 <input type="radio" name="plan" id="arcade" ${newPlan === "arcade" ? "checked" : ""} />
-                                <img src="./src/assets/images/icon-arcade.svg" alt="Arcade" />
+                                <img src=${arcadeSvg} alt="Arcade" />
                                 <div class="details">
                                     <h3>Arcade</h3>
                                     <span>$90/yr</span>
@@ -61,7 +64,7 @@ const yearlyOptions = (newPlan: string) => {
                             <label for="advanced">
                             <div class="option">
                                 <input type="radio" name="plan" id="advanced"  ${newPlan === "advanced" ? "checked" : ""} />
-                                <img src="./src/assets/images/icon-advanced.svg" alt="Advanced" />
+                                <img src=${advancedSvg} alt="Advanced" />
                                 <div class="details">
                                     <h3>Advanced</h3>
                                     <span>$120/yr</span>
@@ -72,7 +75,7 @@ const yearlyOptions = (newPlan: string) => {
                             <label for="pro">
                             <div class="option">
                                 <input type="radio" name="plan" id="pro"  ${newPlan === "pro" ? "checked" : ""} />
-                                <img src="./src/assets/images/icon-pro.svg" alt="Pro" />
+                                <img src=${proSvg} alt="Pro" />
                                 <div class="details">
                                     <h3>Pro</h3>
                                     <span>$150/yr</span>
@@ -122,7 +125,7 @@ export const renderStepTwo = () => {
                                     <label for="arcade">
                                         <div class="option">
                                             <input type="radio" name="plan" id="arcade" checked />
-                                            <img src="./src/assets/images/icon-arcade.svg" alt="Arcade" />
+                                            <img src=${arcadeSvg} alt="Arcade" />
                                             <div class="details">
                                                 <h3>Arcade</h3>
                                                 <span>$9/mo</span>
@@ -132,7 +135,7 @@ export const renderStepTwo = () => {
                                     <label for="advanced">
                                         <div class="option">
                                             <input type="radio" name="plan" id="advanced" />
-                                            <img src="./src/assets/images/icon-advanced.svg" alt="Advanced" />
+                                            <img src=${advancedSvg} alt="Advanced" />
                                             <div class="details">
                                                 <h3>Advanced</h3>
                                                 <span>$12/mo</span>
@@ -142,7 +145,7 @@ export const renderStepTwo = () => {
                                     <label for="pro">
                                         <div class="option">
                                             <input type="radio" name="plan" id="pro" />
-                                            <img src="./src/assets/images/icon-pro.svg" alt="Pro" />
+                                            <img src=${proSvg} alt="Pro" />
                                             <div class="details">
                                                 <h3>Pro</h3>
                                                 <span>$15/mo</span>
